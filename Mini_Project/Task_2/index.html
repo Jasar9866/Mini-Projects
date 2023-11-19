@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Country Information</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #f7f7f7;
+      }
+      .container {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        color: #333;
+      }
+      select.form-control {
+        width: 100%;
+      }
+      img.country-flag {
+        display: block;
+        margin: 0 auto;
+      }
+      .country-info p {
+        margin: 10px 0;
+      }
+      #googleMap {
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1>Country Information</h1>
+      <div class="form-group">
+        <label for="countrySelect">Select a Country:</label>
+        <select class="form-control" id="countrySelect"></select>
+      </div>
+      <div id="countryInfo" class="mt-4 country-info"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANimsBsXGSj3nEnzzH3dPtG6ur4CXYYt8"></script> 
+    <script src="script.js"></script>
+  </body>
+</html>
